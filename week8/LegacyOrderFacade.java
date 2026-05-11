@@ -1,6 +1,5 @@
 package week8;
 
-// DO NOT MODIFY THIS CLASS (As per instructions)
 class LegacyOrderProcessor {
     public void processOrder(String customerEmail, String itemCode, double amount, String deliveryAddress) {
         Inventory inv = new Inventory();
@@ -25,14 +24,12 @@ class LegacyOrderProcessor {
 }
 
 public class LegacyOrderFacade {
-    // Wrap the legacy processor using composition
     private LegacyOrderProcessor processor;
 
     public LegacyOrderFacade() {
         this.processor = new LegacyOrderProcessor();
     }
 
-    // Clean simplified interface for the client
     public void placeOrder(String customerEmail, String itemCode, double amount, String deliveryAddress) {
         processor.processOrder(customerEmail, itemCode, amount, deliveryAddress);
     }
