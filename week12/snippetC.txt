@@ -1,0 +1,9 @@
+procedure h(c: IN OUT Integer, d: IN OUT Integer)
+begin
+    c := c + 1;
+    d := d + 1;
+end;
+
+a := 2; b := 2;
+h(a, a);  // same variable twice
+print a, b;

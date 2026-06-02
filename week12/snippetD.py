@@ -1,0 +1,8 @@
+def modify(lst, num):
+    lst.append(4)
+    num = 100
+
+my_list = [1,2,3]
+x = 7
+modify(my_list, x)
+print(my_list, x)
